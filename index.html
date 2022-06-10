@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,26 +18,23 @@
 
 
 <div class="options">
-    <button class="emoji">👊🏻</button>
-    <button class="emoji">🖐🏻</button>
-    <button class="emoji">✌🏻</button>
+    <button class="emoji" id="rock">👊🏻</button>
+    <button class="emoji" id="paper" >🖐🏻</button>
+    <button class="emoji" id="scissors">✌🏻</button>
 </div>
 
 <div class="outcome grid-container">  
+    
+    <p class="grid-item">Computer Choice: <span id="computer-choice"></span></p>
+    <p class="grid-item">Your Choice: <span id="user-choice"></span></p>
 
-    <p class="grid-item">You
-    <span>0</span>
-</p>
-    <p class="grid-item">Computer
-    <span>0</span>
-</p>
-
-<p class="result result-1"> ✌🏻 </p>
-<p class="result result-2"> 👊🏻 </p>
-
-
+<p class="outcome"> ✌🏻 </p>
+<p class="outcome"> 👊🏻 </p>
 
 </div>
+
+<h4 id="result">Computer wins</h4>
+
 
 </body>
 
