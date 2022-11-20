@@ -18,42 +18,43 @@ function computerPlay() {
     console.log(`computer : ${options[1]} 📄`);
   } else {
     console.log(`computer : ${options[2]} ✂️`);
-
   }
-  return computerPlay
-};
+  return computerPlay;
+}
+
+computerPlay();
+
+printComputerPlay = computerPlay;
 
 // PLAYERS CHOICE
-function playerChoice() {
-   let rockClick = rockBtn.addEventListener("click", function () {
+function playersChoice() {
+
+  rockBtn.addEventListener("click", function (rock) {
     console.log(`player : ${options[0]} 🪨`);
   });
-
-  let paperClick = paperBtn.addEventListener("click", function () {
+  
+  paperBtn.addEventListener("click", function () {
     console.log(`player : ${options[1]} 📄`);
   });
-
-  let scissorClick = scissorsBtn.addEventListener("click", function () {
+  
+  scissorsBtn.addEventListener("click", function () {
     console.log(`player : ${options[2]} ✂️`);
   });
 
-  return playerChoice;
-};
+  return playersChoice;
+}
 
+playersChoice();
 
-
-
-
-  function playRound() {
-    if(rockClick === true + randomiser === 0) {
-      console.log(`draw!`)
-    } else if (scissorClick === true + randomiser === 1){
-      console.log(`draw!`)
-    } else if (paperClick === true + randomiser === 2){
-      console.log(`draw!`)
-    }
-  
+function playRound() {
+  if (playersChoice == 'rock' && randomiser == 0) {
+    console.log('draw')
   }
+}
+
+
+
+
 
 // function winner(playerChoice, computerPlay) {
 
@@ -69,9 +70,6 @@ function playerChoice() {
 // function game() {
 // playRound();
 // }
-
-
-
 
 // function playerChoice() {
 // //link buttons
