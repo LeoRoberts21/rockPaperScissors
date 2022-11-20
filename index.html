@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,9 +17,9 @@
 
 
 <div class="options">
-    <button class="emoji rock">👊🏻</button>
-    <button class="emoji" id="paper" >🖐🏻</button>
-    <button class="emoji" id="scissors">✌🏻</button>
+    <button href=".." onclick="playRound()" class="emoji" id="rock">👊🏻</button>
+    <button href=".." onclick="playRound()" class="emoji" id="paper" >🖐🏻</button>
+    <button href=".." onclick="playRound()" class="emoji" id="scissors">✌🏻</button>
 </div>
 
 <div class="outcome grid-container">  
@@ -35,7 +34,7 @@
 
 <h4 id="result">Computer wins</h4>
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
